@@ -1,0 +1,193 @@
+
+@import url("css/reset.css");
+/* ------------------------------------------------------------------- 
+ >>> Fontes
+------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+
+* { 
+    font-family: 'Sometype Mono', monospace;
+ }
+body{padding: 0;margin: 0;}
+/* ------------------------------------------------------------------- 
+ >>> Colors
+-------------------------------------------------------------------
+
+    color-1         : #514366;
+    color-2         : #ff994b;
+    color-3         : #fbe6d7
+------------------*/
+    
+#logo {
+    position:fixed;
+    left: 0;
+    top: 0;
+    float: left;
+    display: block;
+    width:5%;
+    max-width:50px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1px;
+}
+#logo img { 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+header, 
+main,
+section,
+nav,
+footer  {
+    display: block;
+    clear: both;
+    margin: 0; 
+    width: 100%;    
+}
+header > div,
+main > div,
+section > div,
+footer > div {
+    width: 70%;
+    max-width: 2000px;
+    margin: 10px auto;
+    padding:10px 5%;
+    clear: both;
+    background-color: #fbefe9;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: #514366;
+}
+h2{
+    font-size:1.3rem;
+    text-shadow:-0.1rem .1rem .2rem #000;
+    letter-spacing: 0.1rem;
+    font-variant: small-caps;
+    overflow-wrap: unset;
+}
+h2 span{opacity: 0.3;}
+
+.backtop{float:right;}
+.vtopo{ 
+    position: relative; 
+    height: 1px;
+    overflow: visible;
+}
+.vtopo a{ 
+    background-color: rgba(239, 238, 239, 0.8);
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8rem;
+    position: absolute;
+    right: -3.5rem;
+    bottom: 3.5rem;
+    transform: rotate(270deg);
+    display: flex;
+    align-items: center;
+}
+.vtopo a *{ display: flex; align-items: center; justify-items: center; justify-content: center;padding: .3rem;  }
+
+/*** Header ***************************************************************************/
+
+header {
+    background: #514366;
+    color:#fff;
+    padding-bottom:2rem;
+}
+header h1 {text-shadow:-0.3rem .3rem .5rem #000; color:#ff994b;}
+header > .topo {
+    background:#514366;
+    color:#fff;
+  
+    /*alinhando*/
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+header .topo > div {
+    display: grid;
+    flex: 2;
+}
+header .topo > img {
+    max-width: 260px;
+    flex-grow: 1;
+    transition: all 0.2s ease-out;
+}
+header .topo > img:hover {
+    max-width: 260px;
+    flex-grow: 1;
+    scale: 1.1;
+    transform: rotate(5deg);
+    transition: all 0.8s ease-out;  
+}
+
+
+/*** Menu ***************************************************************************/
+ul.menu {
+    padding:1px;
+    margin:0 auto;
+    padding: 5px 0; 
+    width: 82%;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+ul.menu li {
+    margin:-2rem 1% 10px;
+    list-style: none;
+    display: grid;
+    align-items: center;
+    flex: 1;
+    color:#fff ;
+    background-color: #c9c7c9;
+    text-shadow: 0 0 0 #fff;
+    box-shadow: 0 0 0 #ff994b;
+    transition-property:background-color, text-shadow;
+}
+ul.menu li a {    
+    color:#6f496e;
+    transition-property: color;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .2em;
+    text-align: center;
+    font-size: 1rem;        
+    padding: 1rem 0.1rem;   
+
+}
+ul.menu li:hover {
+    background-color: #b9a7b9;
+    text-shadow: -1px 1px 1px #fff;
+    box-shadow: 0 0 5px #ff994b;
+    transition-property: background-color, text-shadow;
+    transition-duration: .5s;      
+}
+ul.menu li:hover a {
+    color: #221a20;
+    background-color: #b9a7b9;
+    transition-property: color, background-color;  
+    transition-duration: .5s;     
+}
+
+/*** Sections ***************************************************************************/
+#intro, #historia{}
+
+/*** Contacto ***************************************************************************/
+.ul-social{
+    width: 10%;
+    max-width: 100px;
+    min-width: 50px;
+    display: inline-block;
+}
+/*** Footer ***************************************************************************/
+footer {background: #A6DEB3;color: rgba(0, 0, 0, 0.5); position: relative;}
+footer div {margin: 2rem auto 0; position:relative; top:-1rem; background-color: #fed390; }
+footer p{margin-bottom:0;}
+footer span{ font-size: 0.7rem;}
